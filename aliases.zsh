@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-function gi() { curl curl -sL https://www.gitignore.io/api/$@ ;}
-
 # Shortcuts
 alias myip="curl ifconfig.io"
 alias reloadshell="source $HOME/.zshrc"
