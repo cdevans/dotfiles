@@ -1,51 +1,101 @@
 #!/bin/sh
 
+CURDIR=$(pwd)
+
 echo "Cloning repositories..."
 
 PROJECTS=$HOME/Projects
-RSPNDR=$PROJECTS/RSPNDR
-
-CURDIR=$(pwd)
+if [ ! -d "$PROJECTS" ]; then
+    echo "Creating" $PROJECTS
+    mkdir -p $PROJECTS
+fi
 
 # Personal
-git clone git@github.com:cdevans/cde-misc.git $PROJECTS/cde-misc
+REPO="cde-misc"
+if [ ! -d "$PROJECTS/cde-misc" ]; then
+    echo "Clonng" $REPO
+    git clone git@github.com:cdevans/cde-misc.git $PROJECTS/$REPO
+fi
 
 # RSPNDR
-git clone https://github.com/priyankpat/capacitor.git $RSPNDR/capacitor
-git clone git@github.com:rspndr/postman-scripts.git $RSPNDR/postman-scripts
-git clone git@github.com:rspndr/rspndr-gmail-csv-extractor.git $RSPNDR/rspndr-gmail-csv-extractor
+RSPNDR=$PROJECTS/RSPNDR
+if [ ! -d "$RSPNDR" ]; then
+    echo "Creating" $RSPNDR
+    mkdir -p $RSPNDR
+fi
 
-git clone git@github.com:rspndr/rspndr-app.git $RSPNDR/rspndr-app
-cd $RSPNDR/rspndr-app
+REPO="capacitor"
+if [ ! -d "$RSPNDR/$REPO" ]; then
+    echo "Clonng" $REPO
+    git clone https://github.com/priyankpat/capacitor.git $RSPNDR/$REPO
+fi
+
+REPO="postman-scripts"
+if [ ! -d "$RSPNDR/$REPO" ]; then
+    echo "Clonng" $REPO
+    git clone git@github.com:rspndr/postman-scripts.git $RSPNDR/$REPO
+fi
+
+REPO="rspndr-gmail-csv-extractor"
+if [ ! -d "$RSPNDR/$REPO" ]; then
+    git clone git@github.com:rspndr/rspndr-gmail-csv-extractor.git $RSPNDR/$REPO
+fi
+
+REPO="rspndr-app"
+if [ ! -d "$RSPNDR/$REPO" ]; then
+    echo "Clonng" $REPO
+    git clone git@github.com:rspndr/rspndr-app.git $RSPNDR/$REPO
+fi
+cd $RSPNDR/$REPO
 git checkout master && git checkout develop
 git flow init -d
-npm install
+rm -rf node_modules/ package-lock.json && npm install
 
-git clone git@github.com:rspndr/rspndr-client.git $RSPNDR/rspndr-client
-cd $RSPNDR/rspndr-client
+REPO="rspndr-client"
+if [ ! -d "$RSPNDR/$REPO" ]; then
+    echo "Clonng" $REPO
+    git clone git@github.com:rspndr/rspndr-client.git $RSPNDR/$REPO
+fi
+cd $RSPNDR/$REPO
 git checkout master && git checkout develop
 git flow init -d
-npm install
+rm -rf node_modules/ package-lock.json && npm install
 
-git clone git@github.com:rspndr/rspndr-portal.git $RSPNDR/rspndr-portal
-cd $RSPNDR/rspndr-portal
+REPO="rspndr-portal"
+if [ ! -d "$RSPNDR/$REPO" ]; then
+    echo "Clonng" $REPO
+    git clone git@github.com:rspndr/rspndr-portal.git $RSPNDR/$REPO
+fi
+cd $RSPNDR/$REPO
 git checkout master && git checkout develop
 git flow init -d
-npm install
+rm -rf node_modules/ package-lock.json && npm install
 
-git clone git@github.com:rspndr/rspndr-toolbox.git $RSPNDR/rspndr-toolbox
-cd $RSPNDR/rspndr-toolbox
+REPO="rspndr-toolbox"
+if [ ! -d "$RSPNDR/$REPO" ]; then
+    echo "Clonng" $REPO
+    git clone git@github.com:rspndr/rspndr-toolbox.git $RSPNDR/$REPO
+fi
+cd $RSPNDR/$REPO
 git checkout master && git checkout develop
 git flow init -d
-npm install
+rm -rf node_modules/ package-lock.json && npm install
 
-git clone git@github.com:rspndr/rspndr.git $RSPNDR/rspndr
-cd $RSPNDR/rspndr
+REPO="rspndr"
+if [ ! -d "$RSPNDR/$REPO" ]; then
+    echo "Clonng" $REPO
+    git clone git@github.com:rspndr/rspndr.git $RSPNDR/$REPO
+fi
+cd $RSPNDR/$REPO
 git checkout master && git checkout develop
 git flow init -d
 
-git clone git@github.com:rspndr/rspndr-connect.git $RSPNDR/rspndr-connect
-cd $RSPNDR/rspndr-connect
+REPO="rspndr-connect"
+if [ ! -d "$RSPNDR/$REPO" ]; then
+    echo "Clonng" $REPO
+    git clone git@github.com:rspndr/rspndr-connect.git $RSPNDR/$REPO
+fi
+cd $RSPNDR/$REPO
 git checkout master && git checkout develop
 git flow init -d
 
