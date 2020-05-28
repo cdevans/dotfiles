@@ -7,6 +7,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 
 # Binaries
+brew "asciidoctor"
 brew "awscli"
 brew "dockutil"
 brew "gh"
@@ -16,6 +17,7 @@ brew "hub"
 brew "jq"
 brew "mackup"
 brew "mas"
+#brew "node@12"
 brew "pyenv"
 brew "wget"
 brew "zsh"
@@ -29,12 +31,15 @@ cask "docker"
 cask "github"
 #cask "gitkraken"
 cask "google-chrome"
+cask "google-cloud-sdk"
 #cask "google-photos-backup-and-sync"
 cask "intelliscape-caffeine"
 cask "jetbrains-toolbox"
+cask "ksdiff"
 #cask "macdown"
 cask "postman"
 cask "quickbooks-online"
+cask "session-manager-plugin"
 cask "sketch"
 cask "skype"
 cask "steam"
@@ -61,7 +66,7 @@ mas "Day One", id: 1055511498
 mas "Kaleidoscope", id: 587512244
 mas "Keynote", id: 409183694
 #mas "Marked", id: 890031187
-mas "Menu World Time", id: 1446377255 
+#mas "Menu World Time", id: 1446377255 
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Remote Desktop", id: 1295203466
@@ -74,7 +79,7 @@ mas "Reeder", id: 1449412482
 mas "Slack", id: 803453959
 #mas "Things", id: 904280696
 mas "Tweetbot", id: 1384080005
-#mas "XCode", id: 497799835
+mas "XCode", id: 497799835
 
 # Fonts
 brew "svn" #tempoary until SVN-based font casks updated
