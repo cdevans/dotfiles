@@ -25,6 +25,7 @@ brew "zsh"
 # Apps
 #cask "android-studio"
 cask "appcleaner"
+cask "cheatsheet"
 cask "cocoapods"
 cask "docker"
 #cask "delicious-library"
