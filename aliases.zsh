@@ -26,10 +26,10 @@ alias amend="git commit --amend --no-edit"
 alias unstage="git restore --staged ."
 
 # JS
-alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
+alias nfresh="rm -rf node_modules/ && npm install"
 alias watch="npm run watch"
 
 # RSPNDR
-alias rspndr-uuid="uuidgen | tr \"[:upper:]\" \"[:lower:]\" | pbcopy"
+alias rspndr-uuid="uuidgen | tr '[:upper:]' '[:lower:]' | tr -d '\n' | pbcopy"
 alias rspndr-inst="/usr/local/bin/aws-list-instances"
 alias rspndr-ssh="/usr/local/bin/aws-ssh"
