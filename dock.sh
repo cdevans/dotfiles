@@ -1,0 +1,55 @@
+#!/usr/bin/env zsh
+
+ANDROIDSTUDIO=$(ls -r ${HOME}/Library/Application\ Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0 | head -n 1)
+DATAGRIP=$(ls -r ${HOME}/Library/Application\ Support/JetBrains/Toolbox/apps/datagrip/ch-0 | head -n 1)
+INTELLIJ=$(ls -r ${HOME}/Library/Application\ Support/JetBrains/Toolbox/apps/IDEA-U/ch-0 | head -n 1)
+
+dockutil --no-restart --remove all
+dockutil --no-restart --add "/Applications/Launchpad.app"
+dockutil --no-restart --add "/Applications/System Preferences.app"
+dockutil --no-restart --add "/Applications/App Store.app"
+dockutil --no-restart --add "/Applications/News.app"
+dockutil --no-restart --add "/Applications/Reeder.app"
+dockutil --no-restart --add "/Applications/Day One.app"
+dockutil --no-restart --add "/Applications/Paprika Recipe Manager 3.app"
+dockutil --no-restart --add "/Applications/Photos.app"
+dockutil --no-restart --add "/Applications/Music.app"
+dockutil --no-restart --add "/Applications/Podcasts.app"
+dockutil --no-restart --add "/Applications/TV.app"
+dockutil --no-restart --add "/Applications/QuickBooks.app"
+dockutil --no-restart --add "/Applications/Mail.app"
+dockutil --no-restart --add "/Applications/Contacts.app"
+dockutil --no-restart --add "/Applications/Calendar.app"
+dockutil --no-restart --add "/Applications/Notes.app"
+dockutil --no-restart --add "/Applications/Reminders.app"
+dockutil --no-restart --add "/Applications/Maps.app"
+dockutil --no-restart --add "/Applications/1Password 7.app"
+dockutil --no-restart --add "/Applications/Safari.app"
+dockutil --no-restart --add "/Applications/Google Chrome.app"
+dockutil --no-restart --add "/Applications/Tweetbot.app"
+dockutil --no-restart --add "/Applications/FaceTime.app"
+dockutil --no-restart --add "/Applications/Messages.app"
+dockutil --no-restart --add "/Applications/Slack.app"
+dockutil --no-restart --add "/Applications/zoom.us.app"
+dockutil --no-restart --add "/Applications/Pages.app"
+dockutil --no-restart --add "/Applications/Numbers.app"
+dockutil --no-restart --add "/Applications/Keynote.app"
+dockutil --no-restart --add "/Applications/Microsoft Word.app"
+dockutil --no-restart --add "/Applications/Microsoft Excel.app"
+dockutil --no-restart --add "/Applications/Microsoft PowerPoint.app"
+dockutil --no-restart --add "/Applications/Studio 3T.app"
+dockutil --no-restart --add "${HOME}/Library/Application Support/JetBrains/Toolbox/apps/datagrip/ch-0/${DATAGRIP}/DataGrip.app"
+dockutil --no-restart --add "/Applications/Xcode.app"
+dockutil --no-restart --add "${HOME}/Library/Application Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0/${ANDROIDSTUDIO}/Android Studio.app"
+dockutil --no-restart --add "${HOME}/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/${INTELLIJ}/IntelliJ IDEA.app"
+dockutil --no-restart --add "/Applications/Visual Studio Code.app"
+dockutil --no-restart --add "/Applications/Visual Studio Code - Insiders.app"
+dockutil --no-restart --add "/Applications/Kaleidoscope.app"
+dockutil --no-restart --add "/Applications/Postman.app"
+dockutil --no-restart --add "/Applications/Transmit.app"
+dockutil --no-restart --add "/Applications/VMware Fusion.app"
+dockutil --no-restart --add "/Applications/Terminal.app"
+dockutil --no-restart --add "/Applications/Adobe Premiere Pro 2020.app"
+
+killall Dock
+
