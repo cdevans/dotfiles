@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # Shortcuts
 alias myip="curl ifconfig.io"

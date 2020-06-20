@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 function gi() {
     curl curl -L -s https://www.gitignore.io/api/$@ ;
