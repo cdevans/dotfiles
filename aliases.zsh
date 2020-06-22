@@ -5,12 +5,12 @@ alias myip="curl ifconfig.io"
 alias reloadshell="source $HOME/.zshrc"
 
 # Directories
-alias dotfiles="cd $DOTFILES"
-alias library="cd $HOME/Library"
 alias dl="cd $HOME/Downloads"
 alias dt="cd $HOME/Desktop"
 alias proj="cd $HOME/Projects"
+alias library="cd $HOME/Library"
 alias icldr="cd $HOME/Library/Mobile\ Documents/com\~apple~CloudDocs"
+alias dotfiles="cd $HOME/Library/Mobile\ Documents/com\~apple~CloudDocs/dotfiles"
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
