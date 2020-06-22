@@ -10,12 +10,12 @@ fi
 # Update Homebrew recipes
 brew update
 
-# Install all our dependencies with bundle (See Brewfile)
+# Install all our dependencies with bundle (see Brewfile)
 brew tap homebrew/bundle
 brew bundle
 
 # Clone repositories
-./clone.sh
+./clone-repos
 
 # Remove .zshrc from $HOME (if it exists) and symlink the .zshrc file from ~/.dotfiles
 rm -rf $HOME/.zshrc
