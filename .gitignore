@@ -1,0 +1,35 @@
+# Ignore everything except directories
+*
+!*/
+
+##### WHITELIST #####
+
+# mackup
+!.mackup/**/*
+!.mackup.cfg
+
+# bin
+!bin/**/*
+
+# git
+!.git-templates
+!.gitconfig
+!.gitignore_global
+
+# zsh / oh-my-zsh
+!path.zsh
+!aliases.zsh
+!functions.zsh
+!.zshrc
+
+# dotfiles
+!README.md
+!Brewfile
+#!brew/**/*
+#!misc/**/*
+#!tasks/**/*
+
+##### BLACKLIST #####
+
+# Library
+Library
