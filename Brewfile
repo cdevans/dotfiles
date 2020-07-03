@@ -17,10 +17,7 @@ brew "hub"
 brew "jq"
 brew "mackup"
 brew "mas"
-#brew "node@12"
 brew "pyenv"
-brew "wget"
-brew "zsh"
 
 # Apps
 #cask "android-studio"
@@ -37,6 +34,7 @@ cask "google-cloud-sdk"
 cask "intelliscape-caffeine"
 cask "jetbrains-toolbox"
 cask "ksdiff"
+cask "flipper"
 #cask "macdown"
 cask "postman"
 cask "quickbooks-online"
@@ -57,8 +55,7 @@ cask "vlc"
 cask "vmware-fusion"
 #cask "whatsapp"
 cask "zoomus"
-cask "zulu11"
-#cask "zulu"
+cask "zulu"
 
 # Mac App Store
 mas "1Password 7", id: 1333542190
