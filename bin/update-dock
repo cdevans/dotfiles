@@ -3,6 +3,7 @@
 ANDROIDSTUDIO=$(ls -r ${HOME}/Library/Application\ Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0 | head -n 1)
 DATAGRIP=$(ls -r ${HOME}/Library/Application\ Support/JetBrains/Toolbox/apps/datagrip/ch-0 | head -n 1)
 INTELLIJ=$(ls -r ${HOME}/Library/Application\ Support/JetBrains/Toolbox/apps/IDEA-U/ch-0 | head -n 1)
+PYCHARM=$(ls -r ${HOME}/Library/Application\ Support/JetBrains/Toolbox/apps/PyCharm-P/ch-0 | head -n 1)
 
 dockutil --no-restart --remove all
 dockutil --no-restart --add "/Applications/Launchpad.app"
@@ -42,6 +43,7 @@ dockutil --no-restart --add "${HOME}/Library/Application Support/JetBrains/Toolb
 dockutil --no-restart --add "/Applications/Xcode.app"
 dockutil --no-restart --add "${HOME}/Library/Application Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0/${ANDROIDSTUDIO}/Android Studio.app"
 dockutil --no-restart --add "${HOME}/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/${INTELLIJ}/IntelliJ IDEA.app"
+dockutil --no-restart --add "${HOME}/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/${PYCHARM}/PyCharm.app" --replacing "PyCharm"
 dockutil --no-restart --add "/Applications/Visual Studio Code.app"
 dockutil --no-restart --add "/Applications/Visual Studio Code - Insiders.app"
 dockutil --no-restart --add "/Applications/Kaleidoscope.app"
