@@ -41,26 +41,6 @@ if [ ! -d "$RSPNDR/$REPO" ]; then
     git clone git@github.com:rspndr/rspndr-gmail-csv-extractor.git $RSPNDR/$REPO
 fi
 
-REPO="rspndr-app"
-if [ ! -d "$RSPNDR/$REPO" ]; then
-    echo "Clonng" $REPO
-    git clone git@github.com:rspndr/rspndr-app.git $RSPNDR/$REPO
-fi
-cd $RSPNDR/$REPO
-git checkout master && git checkout develop
-git flow init -d
-rm -rf node_modules/ package-lock.json && npm install
-
-REPO="rspndr-client"
-if [ ! -d "$RSPNDR/$REPO" ]; then
-    echo "Clonng" $REPO
-    git clone git@github.com:rspndr/rspndr-client.git $RSPNDR/$REPO
-fi
-cd $RSPNDR/$REPO
-git checkout master && git checkout develop
-git flow init -d
-rm -rf node_modules/ package-lock.json && npm install
-
 REPO="rspndr-portal"
 if [ ! -d "$RSPNDR/$REPO" ]; then
     echo "Clonng" $REPO
@@ -71,20 +51,20 @@ git checkout master && git checkout develop
 git flow init -d
 rm -rf node_modules/ package-lock.json && npm install
 
-REPO="rspndr-toolbox"
+REPO="rspndr-frontend"
 if [ ! -d "$RSPNDR/$REPO" ]; then
     echo "Clonng" $REPO
-    git clone git@github.com:rspndr/rspndr-toolbox.git $RSPNDR/$REPO
+    git clone git@github.com:rspndr/rspndr-frontend.git $RSPNDR/$REPO
 fi
 cd $RSPNDR/$REPO
 git checkout master && git checkout develop
 git flow init -d
 rm -rf node_modules/ package-lock.json && npm install
 
-REPO="rspndr"
+REPO="rspndr-backend"
 if [ ! -d "$RSPNDR/$REPO" ]; then
     echo "Clonng" $REPO
-    git clone git@github.com:rspndr/rspndr.git $RSPNDR/$REPO
+    git clone git@github.com:rspndr/rspndr-backend.git $RSPNDR/$REPO
 fi
 cd $RSPNDR/$REPO
 git checkout master && git checkout develop
@@ -94,6 +74,16 @@ REPO="rspndr-connect"
 if [ ! -d "$RSPNDR/$REPO" ]; then
     echo "Clonng" $REPO
     git clone git@github.com:rspndr/rspndr-connect.git $RSPNDR/$REPO
+fi
+cd $RSPNDR/$REPO
+git checkout master && git checkout develop
+git flow init -d
+
+
+REPO="rspndr-doc"
+if [ ! -d "$RSPNDR/$REPO" ]; then
+    echo "Clonng" $REPO
+    git clone git@github.com:rspndr/rspndr-doc.git $RSPNDR/$REPO
 fi
 cd $RSPNDR/$REPO
 git checkout master && git checkout develop
