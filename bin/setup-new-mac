@@ -17,12 +17,12 @@ brew bundle
 # Clone repositories
 ./clone-repos
 
-# Remove .zshrc from $HOME (if it exists) and symlink the .zshrc file from ~/.dotfiles
+# Remove .zshrc from $HOME (if it exists) and symlink the .zshrc file from the dotfiles directory
 rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+ln -s $HOME/Library/Mobile\ Documents/com\~apple~CloudDocs/dotfiles/.zshrc $HOME/.zshrc
 
 # Symlink the Mackup config file to the home directory
-ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
+ln -s $HOME/Library/Mobile\ Documents/com\~apple~CloudDocs/dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
