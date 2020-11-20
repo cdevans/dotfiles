@@ -45,13 +45,10 @@ dockutil --no-restart --add "${HOME}/Library/Application Support/JetBrains/Toolb
 dockutil --no-restart --add "${HOME}/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/${INTELLIJ}/IntelliJ IDEA.app"
 dockutil --no-restart --add "${HOME}/Library/Application Support/JetBrains/Toolbox/apps/PyCharm-P/ch-0/${PYCHARM}/PyCharm.app" --replacing "PyCharm"
 dockutil --no-restart --add "/Applications/Visual Studio Code.app"
-dockutil --no-restart --add "/Applications/Visual Studio Code - Insiders.app"
 dockutil --no-restart --add "/Applications/Kaleidoscope.app"
 dockutil --no-restart --add "/Applications/Postman.app"
 dockutil --no-restart --add "/Applications/Transmit.app"
-dockutil --no-restart --add "/Applications/VMware Fusion.app"
 dockutil --no-restart --add "/Applications/Terminal.app"
-dockutil --no-restart --add "/Applications/Adobe Premiere Pro 2020.app"
 
 killall Dock
 
