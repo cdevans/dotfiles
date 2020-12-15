@@ -31,3 +31,6 @@ export GRADLE_USER_HOME=$HOME/.gradle
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# Configure ruby/gem
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
