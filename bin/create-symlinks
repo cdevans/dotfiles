@@ -1,0 +1,6 @@
+#!/usr/bin/env zsh
+
+# RSPNDR
+ln -s $HOME/Library/Mobile\ Documents/com\~apple~CloudDocs/dotfiles/rspndr/aws-ssh /usr/local/bin/aws-ssh
+ln -s $HOME/Library/Mobile\ Documents/com\~apple~CloudDocs/dotfiles/rspndr/aws-list-instances /usr/local/bin/aws-list-instances
+ln -s $HOME/Library/Mobile\ Documents/com\~apple~CloudDocs/dotfiles/rspndr/org-cache /usr/local/bin/org-cache
