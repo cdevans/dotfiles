@@ -2,6 +2,12 @@
 *
 !*/
 
+##### BLACKLIST #####
+
+Library
+rspndr
+secret
+
 ##### WHITELIST #####
 
 # mackup
@@ -17,22 +23,13 @@
 !.gitignore_global
 
 # zsh / oh-my-zsh
-!path.zsh
 !aliases.zsh
 !functions.zsh
+!path.zsh
 !.zshrc
 
 # dotfiles
 !README.md
 !Brewfile
-#!brew/**/*
-#!misc/**/*
-#!tasks/**/*
+!.macos
 
-##### BLACKLIST #####
-
-# Library
-Library
-
-# Custom
-rspndr
