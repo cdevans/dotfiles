@@ -1,23 +1,33 @@
 #!/usr/bin/env zsh
 
-CURDIR=$(pwd)
+echo "Setting up repositories..."
 
-echo "Cloning repositories..."
-
-PROJECTS=$HOME/Projects
+PROJECTS=$HOME/Projects2
 if [ ! -d "$PROJECTS" ]; then
     echo "Creating" $PROJECTS
     mkdir -p $PROJECTS
 fi
 
-# Personal
+################
+# Personal Repos
+################
+
 REPO="cde-misc"
-if [ ! -d "$PROJECTS/cde-misc" ]; then
+if [ ! -d "$PROJECTS/$REPO" ]; then
     echo "Clonng" $REPO
-    git clone git@github.com:cdevans/cde-misc.git $PROJECTS/$REPO
+    git clone git@github.com:cdevans/$REPO.git $PROJECTS/$REPO
 fi
 
-# RSPNDR
+REPO="cdevans.github.io"
+if [ ! -d "$PROJECTS/cdevans.github.io" ]; then
+    echo "Clonng" $REPO
+    git clone git@github.com:cdevans/$REPO.git $PROJECTS/$REPO
+fi
+
+################
+# RSPNDR Repos
+################
+
 RSPNDR=$PROJECTS/RSPNDR
 if [ ! -d "$RSPNDR" ]; then
     echo "Creating" $RSPNDR
@@ -27,66 +37,60 @@ fi
 REPO="capacitor"
 if [ ! -d "$RSPNDR/$REPO" ]; then
     echo "Clonng" $REPO
-    git clone https://github.com/priyankpat/capacitor.git $RSPNDR/$REPO
+    git clone https://github.com/priyankpat/$REPO.git $RSPNDR/$REPO
 fi
 
 REPO="postman-scripts"
 if [ ! -d "$RSPNDR/$REPO" ]; then
     echo "Clonng" $REPO
-    git clone git@github.com:rspndr/postman-scripts.git $RSPNDR/$REPO
+    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
-REPO="rspndr-gmail-csv-extractor"
+REPO="rspndr-misc"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-    git clone git@github.com:rspndr/rspndr-gmail-csv-extractor.git $RSPNDR/$REPO
+    echo "Clonng" $REPO
+    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+fi
+
+REPO="rspndr-ios-app"
+if [ ! -d "$RSPNDR/$REPO" ]; then
+    echo "Clonng" $REPO
+    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+fi
+
+REPO="rspndr-android-app"
+if [ ! -d "$RSPNDR/$REPO" ]; then
+    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
 REPO="rspndr-portal"
 if [ ! -d "$RSPNDR/$REPO" ]; then
     echo "Clonng" $REPO
-    git clone git@github.com:rspndr/rspndr-portal.git $RSPNDR/$REPO
+    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
-cd $RSPNDR/$REPO
-git checkout master && git checkout develop
-git flow init -d
-rm -rf node_modules/ package-lock.json && npm install
 
 REPO="rspndr-frontend"
 if [ ! -d "$RSPNDR/$REPO" ]; then
     echo "Clonng" $REPO
-    git clone git@github.com:rspndr/rspndr-frontend.git $RSPNDR/$REPO
+    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
-cd $RSPNDR/$REPO
-git checkout master && git checkout develop
-git flow init -d
-rm -rf node_modules/ package-lock.json && npm install
 
 REPO="rspndr-backend"
 if [ ! -d "$RSPNDR/$REPO" ]; then
     echo "Clonng" $REPO
-    git clone git@github.com:rspndr/rspndr-backend.git $RSPNDR/$REPO
+    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
-cd $RSPNDR/$REPO
-git checkout master && git checkout develop
-git flow init -d
 
 REPO="rspndr-connect"
 if [ ! -d "$RSPNDR/$REPO" ]; then
     echo "Clonng" $REPO
-    git clone git@github.com:rspndr/rspndr-connect.git $RSPNDR/$REPO
+    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
-cd $RSPNDR/$REPO
-git checkout master && git checkout develop
-git flow init -d
-
 
 REPO="rspndr-doc"
 if [ ! -d "$RSPNDR/$REPO" ]; then
     echo "Clonng" $REPO
-    git clone git@github.com:rspndr/rspndr-doc.git $RSPNDR/$REPO
+    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
-cd $RSPNDR/$REPO
-git checkout master && git checkout develop
-git flow init -d
 
-cd $CURDIR
+echo "Repositories set up..."
