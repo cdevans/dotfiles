@@ -26,24 +26,38 @@ brew "pyenv"
 brew "wget"
 brew "aws/tap/aws-sam-cli"
 
+# Fonts
+# brew "subversion" #tempoary until SVN-based font casks updated
+cask "font-lato"
+cask "font-open-sans"
+cask "font-roboto"
+cask "font-roboto-condensed"
+cask "font-source-code-pro"
+cask "font-source-sans-pro"
+cask "font-source-serif-pro"
+
 # Apps
 cask "alfred"
 # cask "android-studio"
 cask "appcleaner"
 # cask "balsamiq-wireframes"
+# cask "battle-net"
 cask "caffeine"
 cask "cheatsheet"
 cask "cocoapods"
+# cask "delicious-library"
 cask "docker"
 cask "drawio"
 cask "flipper"
 cask "github"
+# cask "gitkraken"
 cask "google-chrome"
 cask "google-cloud-sdk"
 cask "graphiql"
 cask "jetbrains-toolbox"
 cask "ksdiff"
 cask "flipper"
+# cask "macdown"
 cask "postman"
 cask "qgis"
 cask "quickbooks-online"
@@ -78,6 +92,7 @@ mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft Word", id: 462054704
+# mas "Marked2", id: 890031187
 mas "MindNode", id: 1289197285
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
@@ -87,13 +102,3 @@ mas "Reeder", id: 1529448980
 mas "Slack", id: 803453959
 mas "Tweetbot", id: 1384080005
 mas "XCode", id: 497799835
-
-# Fonts
-# brew "subversion" #tempoary until SVN-based font casks updated
-cask "font-lato"
-cask "font-open-sans"
-cask "font-roboto"
-cask "font-roboto-condensed"
-cask "font-source-code-pro"
-cask "font-source-sans-pro"
-cask "font-source-serif-pro"
