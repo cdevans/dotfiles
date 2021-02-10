@@ -15,7 +15,7 @@ To consider before re-install:
 - Commit and push any work in progress
 - Save documents/files from non-iCloud directories
 - Save data from apps not synced through iCloud
-- Ensure that the [Brewfile](Brewfile) is up to date
+- Ensure that the [Brewfile](Brewfile) is up to date (_cf._ `brew bundle dump`)
 - Update Mackup to the latest version and run `mackup backup`
 - As a just-in-case last resort, clone the machine to an external drive ([SuperDuper!](https://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html) is fantastic)
 
@@ -28,4 +28,3 @@ In addition to those mentioned above, additional inspiration was drawn from the 
 - [Mathias Bynens](https://mathiasbynens.be/) and his [dotfiles repository](https://github.com/mathiasbynens/dotfiles)
 - [Zach Holman](https://zachholman.com/) and his [dotfiles repository](https://github.com/holman/dotfiles)
 - [Gareth Rees](https://zachholman.com/) and his [dotfiles repository](https://github.com/garethrees/dotfiles) and [this gist](https://gist.github.com/garethrees/2470157)
-
