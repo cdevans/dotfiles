@@ -34,12 +34,6 @@ if [ ! -d "$RSPNDR" ]; then
     mkdir -p $RSPNDR
 fi
 
-REPO="capacitor"
-if [ ! -d "$RSPNDR/$REPO" ]; then
-    echo "Clonng" $REPO
-    git clone https://github.com/priyankpat/$REPO.git $RSPNDR/$REPO
-fi
-
 REPO="postman-scripts"
 if [ ! -d "$RSPNDR/$REPO" ]; then
     echo "Clonng" $REPO
