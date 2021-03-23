@@ -10,16 +10,26 @@ I use [Mackup](https://github.com/lra/mackup) to manage symlinking configuration
 
 ## Backup
 
-To consider before re-install:
+To consider before a re-install:
 
 - Commit and push any work in progress
 - Save documents/files from non-iCloud directories
 - Save data from apps not synced through iCloud
 - Ensure that the [Brewfile](Brewfile) is up to date (_cf._ `brew bundle dump`)
 - Update Mackup to the latest version and run `mackup backup`
+- Ensure that any/all SSH keys are backed up and securely stored
 - As a just-in-case last resort, clone the machine to an external drive ([SuperDuper!](https://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html) is fantastic)
 
-## Install
+## A Clean Install
+
+Once everything is backed up, follow [this article](https://www.imore.com/how-do-clean-install-macos) to make a clean install of the latest macOS version.
+
+## Setting Up A New/Clean Mac
+
+To get set up on a fresh macOS install:
+
+- Perform any system updates
+- Install Xcode
 
 ## References
 
@@ -27,4 +37,4 @@ In addition to those mentioned above, additional inspiration was drawn from the 
 
 - [Mathias Bynens](https://mathiasbynens.be/) and his [dotfiles repository](https://github.com/mathiasbynens/dotfiles)
 - [Zach Holman](https://zachholman.com/) and his [dotfiles repository](https://github.com/holman/dotfiles)
-- [Gareth Rees](https://zachholman.com/) and his [dotfiles repository](https://github.com/garethrees/dotfiles) and [this gist](https://gist.github.com/garethrees/2470157)
+- [Gareth Rees](https://zachholman.com/) and his [dotfiles repository](https://github.com/garethrees/dotfiles) plus [this gist](https://gist.github.com/garethrees/2470157)
