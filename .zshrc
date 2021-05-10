@@ -1,14 +1,15 @@
 # Path to dotfiles
-export DOTFILES=$HOME/Library/Mobile\ Documents/com\~apple~CloudDocs/dotfiles
+export ICLOUD_DRIVE="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
+export DOTFILES="$ICLOUD_DRIVE/dotfiles"
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH="$ICLOUD_DRIVE/.oh-my-zsh"
 
 ZSH_THEME="ys"
 
 ZSH_CUSTOM=$DOTFILES
 
-plugins=(git git-flow-avh npm docker aws gcloud)
+plugins=(npm docker gcloud)
 
 source $ZSH/oh-my-zsh.sh
 

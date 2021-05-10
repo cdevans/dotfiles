@@ -9,8 +9,8 @@ alias dl="cd $HOME/Downloads"
 alias dt="cd $HOME/Desktop"
 alias proj="cd $HOME/Projects"
 alias library="cd $HOME/Library"
-alias icldr="cd $HOME/Library/Mobile\ Documents/com\~apple~CloudDocs"
-alias dotfiles="cd $HOME/Library/Mobile\ Documents/com\~apple~CloudDocs/dotfiles"
+alias icldr="cd '$ICLOUD_DRIVE'"
+alias dotfiles="cd '$DOTFILES'"
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
@@ -32,5 +32,5 @@ alias watch="npm run watch"
 
 # RSPNDR
 alias rspndr-uuid="uuidgen | tr '[:upper:]' '[:lower:]' | tr -d '\n' | pbcopy"
-alias rspndr-inst="/usr/local/bin/aws-list-instances"
-alias rspndr-ssh="/usr/local/bin/aws-ssh"
+alias rspndr-inst="'$DOTFILES/rspndr/aws-list-instances'"
+alias rspndr-ssh="'$DOTFILES/rspndr/aws-ssh'"
