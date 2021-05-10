@@ -9,7 +9,7 @@ ZSH_THEME="ys"
 
 ZSH_CUSTOM=$DOTFILES
 
-plugins=(npm docker gcloud)
+plugins=(git npm docker gcloud)
 
 source $ZSH/oh-my-zsh.sh
 
