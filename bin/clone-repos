@@ -2,10 +2,16 @@
 
 echo "Setting up repositories..."
 
-PROJECTS=$HOME/Projects2
+PROJECTS=$HOME/Projects
 if [ ! -d "$PROJECTS" ]; then
     echo "Creating" $PROJECTS
     mkdir -p $PROJECTS
+fi
+
+RSPNDR=$PROJECTS/RSPNDR
+if [ ! -d "$RSPNDR" ]; then
+    echo "Creating" $RSPNDR
+    mkdir -p $RSPNDR
 fi
 
 ################
@@ -27,12 +33,6 @@ fi
 ################
 # RSPNDR Repos
 ################
-
-RSPNDR=$PROJECTS/RSPNDR
-if [ ! -d "$RSPNDR" ]; then
-    echo "Creating" $RSPNDR
-    mkdir -p $RSPNDR
-fi
 
 REPO="postman-scripts"
 if [ ! -d "$RSPNDR/$REPO" ]; then
