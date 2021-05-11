@@ -81,7 +81,7 @@ cask "visual-studio-code"
 cask "vlc"
 cask "vmware-fusion"
 # cask "whatsapp"
-cask "zoomus"
+cask "zoom"
 cask "zulu"
 
 # Mac App Store
