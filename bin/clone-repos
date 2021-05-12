@@ -4,14 +4,14 @@ echo "Setting up repositories..."
 
 PROJECTS=$HOME/Projects
 if [ ! -d "$PROJECTS" ]; then
-    echo "Creating" $PROJECTS
-    mkdir -p $PROJECTS
+  echo "Creating" $PROJECTS
+  mkdir -p $PROJECTS
 fi
 
 RSPNDR=$PROJECTS/RSPNDR
 if [ ! -d "$RSPNDR" ]; then
-    echo "Creating" $RSPNDR
-    mkdir -p $RSPNDR
+  echo "Creating" $RSPNDR
+  mkdir -p $RSPNDR
 fi
 
 ################
@@ -20,14 +20,14 @@ fi
 
 REPO="cde-misc"
 if [ ! -d "$PROJECTS/$REPO" ]; then
-    echo "Clonng" $REPO
-    git clone git@github.com:cdevans/$REPO.git $PROJECTS/$REPO
+  echo "Clonng" $REPO
+  git clone git@github.com:cdevans/$REPO.git $PROJECTS/$REPO
 fi
 
 REPO="cdevans.github.io"
 if [ ! -d "$PROJECTS/cdevans.github.io" ]; then
-    echo "Clonng" $REPO
-    git clone git@github.com:cdevans/$REPO.git $PROJECTS/$REPO
+  echo "Clonng" $REPO
+  git clone git@github.com:cdevans/$REPO.git $PROJECTS/$REPO
 fi
 
 ################
@@ -36,55 +36,55 @@ fi
 
 REPO="postman-scripts"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-    echo "Clonng" $REPO
-    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+  echo "Clonng" $REPO
+  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
 REPO="rspndr-misc"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-    echo "Clonng" $REPO
-    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+  echo "Clonng" $REPO
+  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
 REPO="rspndr-ios-app"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-    echo "Clonng" $REPO
-    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+  echo "Clonng" $REPO
+  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
 REPO="rspndr-android-app"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
 REPO="rspndr-portal"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-    echo "Clonng" $REPO
-    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+  echo "Clonng" $REPO
+  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
 REPO="rspndr-frontend"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-    echo "Clonng" $REPO
-    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+  echo "Clonng" $REPO
+  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
 REPO="rspndr-backend"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-    echo "Clonng" $REPO
-    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+  echo "Clonng" $REPO
+  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
 REPO="rspndr-connect"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-    echo "Clonng" $REPO
-    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+  echo "Clonng" $REPO
+  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
 REPO="rspndr-doc"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-    echo "Clonng" $REPO
-    git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+  echo "Clonng" $REPO
+  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
 echo "Repositories set up..."
