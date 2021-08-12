@@ -91,6 +91,9 @@ mas "Day One", id: 1055511498
 mas "Kaleidoscope", id: 587512244
 mas "Keynote", id: 409183694
 mas "Microsoft Excel", id: 462058435
+#mas "Infuse", id: 1136220934
+mas "Meeter for Zoom, Teams & Co", id: 510445899
+#mas "Menu World Time", id: 1446377255
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft Word", id: 462054704
