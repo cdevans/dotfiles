@@ -37,3 +37,5 @@ fi
 
 # Configure ruby/gem
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+
+source $HOME/.config/broot/launcher/bash/br
