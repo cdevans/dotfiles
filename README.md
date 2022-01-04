@@ -22,7 +22,7 @@ To consider before a re-install:
 
 ## A Clean Install
 
-Once everything is backed up, follow [this article](https://www.imore.com/how-do-clean-install-macos) to make a clean install of the latest macOS version.
+Once everything is backed up, follow [this article](https://support.apple.com/en-us/HT201372) to make a do a clean install of the latest macOS version.
 
 ## Setting Up A New/Clean Mac
 
