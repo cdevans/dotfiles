@@ -3,6 +3,7 @@ tap "aws/tap"
 tap "apparition47/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-eid"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
@@ -11,25 +12,29 @@ tap "homebrew/core"
 brew "act"
 brew "asciidoctor"
 brew "awscli"
+brew "broot"
+brew "cairo"
 brew "cocoapods"
 brew "dockutil"
+# brew "glib"
 brew "gh"
 brew "ghostscript"
 # brew "git-flow-avh"
 brew "go"
 brew "graphviz"
 brew "grpcurl"
- brew "http-server"
+brew "harfbuzz"
+brew "http-server"
 brew "hub"
 brew "jq"
 brew "mackup"
 brew "mas"
 brew "pyenv"
+# brew "subversion" #tempoary until SVN-based font casks updated
 brew "wget"
 brew "aws/tap/aws-sam-cli"
 
 # Fonts
-# brew "subversion" #tempoary until SVN-based font casks updated
 cask "font-lato"
 cask "font-open-sans"
 cask "font-roboto"
@@ -48,29 +53,37 @@ cask "caffeine"
 cask "cheatsheet"
 cask "clickup"
 # cask "delicious-library"
+cask "discord"
 cask "docker"
 cask "dotnet-sdk"
 cask "drawio"
-cask "flipper"
+# cask "flipper"
+# cask "franz"
 cask "github"
 # cask "gitkraken"
 cask "google-chrome"
 cask "google-cloud-sdk"
 cask "graphiql"
+cask "iconset"
 cask "jetbrains-toolbox"
 cask "ksdiff"
 # cask "macdown"
-cask "mailtrackerblocker"
+# cask "mailtrackerblocker"
 cask "microsoft-teams"
+# cask "notion"
+# cask "obsidian"
 cask "postman"
 cask "qgis"
+# cask "qlmarkdown"
 cask "rectangle"
 cask "session-manager-plugin"
 cask "sketch"
 cask "skype"
+# cask "slack"
 cask "steam"
 cask "studio-3t"
 cask "superduper"
+# cask "swiftbar"
 cask "teamviewer"
 cask "transmission"
 cask "transmit"
@@ -82,18 +95,22 @@ cask "vlc"
 cask "vmware-fusion"
 # cask "whatsapp"
 cask "zoom"
-cask "zulu"
+# cask "zulu"
+cask "zulu11"
+cask "zulu15"
 
-# Mac App Store
 mas "1Password 7", id: 1333542190
+mas "Cardhop", id: 1290358394
 mas "Clocker", id: 1056643111
 mas "Day One", id: 1055511498
+mas "Fantastical", id: 975937182
 mas "Kaleidoscope", id: 587512244
+# mas "Kanbanier", id: 1206854548
 mas "Keynote", id: 409183694
+# mas "Infuse", id: 1136220934
+# mas "Meeter", id: 1510445899
+# mas "Menu World Time", id: 1446377255
 mas "Microsoft Excel", id: 462058435
-#mas "Infuse", id: 1136220934
-mas "Meeter for Zoom, Teams & Co", id: 510445899
-#mas "Menu World Time", id: 1446377255
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft Word", id: 462054704
@@ -106,4 +123,7 @@ mas "Pixelmator", id: 407963104
 mas "Reeder", id: 1529448980
 mas "Slack", id: 803453959
 mas "Tweetbot", id: 1384080005
+mas "Ulysses", id: 1225570693
+# mas "Usage", id: 1561788435
+mas "WhatsApp", id: 1147396723
 mas "XCode", id: 497799835
