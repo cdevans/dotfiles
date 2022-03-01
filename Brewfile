@@ -102,6 +102,7 @@ cask "zulu15"
 mas "1Password 7", id: 1333542190
 mas "Cardhop", id: 1290358394
 mas "Clocker", id: 1056643111
+# mas "Craft", id: 1487937127
 mas "Day One", id: 1055511498
 mas "Fantastical", id: 975937182
 mas "Kaleidoscope", id: 587512244
@@ -122,8 +123,9 @@ mas "Paprika Recipe Manager 3", id: 1303222628
 mas "Pixelmator", id: 407963104
 mas "Reeder", id: 1529448980
 mas "Slack", id: 803453959
+mas "Spark", id: 1176895641
 mas "Tweetbot", id: 1384080005
-mas "Ulysses", id: 1225570693
+# mas "Ulysses", id: 1225570693
 # mas "Usage", id: 1561788435
 mas "WhatsApp", id: 1147396723
 mas "XCode", id: 497799835
