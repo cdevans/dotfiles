@@ -13,6 +13,11 @@ plugins=(git npm docker gcloud)
 
 source $ZSH/oh-my-zsh.sh
 
+# Configure Hombebrew on Silicon Macs
+if [ -s "/opt/homebrew/bin/brew" ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 # Configure nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -38,4 +43,6 @@ fi
 # Configure ruby/gem
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 
-source $HOME/.config/broot/launcher/bash/br
+if [ -s "$HOME/.config/broot" ]; then
+  source $HOME/.config/broot/launcher/bash/br
+fi
