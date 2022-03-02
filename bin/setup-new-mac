@@ -1,10 +1,20 @@
-#!/usr/bin/env zsh
+#!/bin/sh
+
+if [ ! -d "$DOTFILES" ]; then
+  DOTFILES="$HOME/Library/Mobile Documents/com~apple~CloudDocs/dotfiles"
+fi
 
 echo "Setting up your Mac..."
 
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
+  echo "Installing Homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+# Configure Hombebrew on Silicon Macs
+if [ -s "/opt/homebrew/bin/brew" ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # Update Homebrew recipes
@@ -12,17 +22,17 @@ brew update
 
 # Install all our dependencies with bundle (see Brewfile)
 brew tap homebrew/bundle
-brew bundle
-
-# Clone repositories
-./clone-repos
+brew bundle --file "$DOTFILES/Brewfile"
 
 # Remove .zshrc from $HOME (if it exists) and symlink the .zshrc file from the dotfiles directory
 rm -rf $HOME/.zshrc
-ln -s $HOME/Library/Mobile\ Documents/com\~apple~CloudDocs/dotfiles/.zshrc $HOME/.zshrc
+ln -s "$DOTFILES/.zshrc" "$HOME/.zshrc"
 
 # Symlink the Mackup config file to the home directory
-ln -s $HOME/Library/Mobile\ Documents/com\~apple~CloudDocs/dotfiles/.mackup.cfg $HOME/.mackup.cfg
+ln -s "$DOTFILES/.mackup.cfg" "$HOME/.mackup.cfg"
+
+# Clone repositories
+./clone-repos
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
