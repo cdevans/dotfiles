@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 if [ ! -d "$DOTFILES" ]; then
   DOTFILES="$HOME/Library/Mobile Documents/com~apple~CloudDocs/dotfiles"
@@ -32,8 +32,17 @@ ln -s "$DOTFILES/.zshrc" "$HOME/.zshrc"
 ln -s "$DOTFILES/.mackup.cfg" "$HOME/.mackup.cfg"
 
 # Clone repositories
-./clone-repos
+$DOTFILES/bin/clone-repos
+
+# Configure node
+$DOTFILES/bin/configure-node
+
+# Configure node
+$DOTFILES/bin/configure-node
+
+# Configure Dock
+$DOTFILES/bin/configure-dock
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
-# source .macos
+source "$DOTFILES/.macos"
