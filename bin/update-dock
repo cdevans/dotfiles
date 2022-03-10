@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/zsh
 
 ANDROIDSTUDIO=$(ls -r ${HOME}/Library/Application\ Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0 | head -n 1)
 DATAGRIP=$(ls -r ${HOME}/Library/Application\ Support/JetBrains/Toolbox/apps/datagrip/ch-0 | head -n 1)
