@@ -1,25 +1,6 @@
-#!/usr/bin/env zsh
+#!/bin/zsh
 
 echo "Setting up NodeJS..."
-
-CURDIR=$(pwd)
-NVM_DIR="$HOME/.nvm"
-
-# Install/Upgrade NVM
-if [ ! -d "$NVM_DIR" ]; then
-  echo "Clonng NVM"
-  git clone https://github.com/nvm-sh/nvm.git "$NVM_DIR"
-else
-  cd $NVM_DIR
-  git fetch --tags origin
-  git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
-fi
-
-# Activate the installed version
-. $NVM_DIR/nvm.sh
-
-# Install node and npm
-nvm install 14 --lts --latest-npm
 
 # Install global packages
 npm install -g @angular/cli@latest @nrwl/cli@latest np@latest
@@ -28,4 +9,3 @@ npm install -g typescript@latest eslint@latest @typescript-eslint/parser@latest 
 npm install -g git-labelmaker@latest github-label-sync@latest
 npm install -g vega-cli@latest
 
-cd $CURDIR
