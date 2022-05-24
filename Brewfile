@@ -1,6 +1,6 @@
 # Taps
-tap "aws/tap"
 tap "apparition47/tap"
+tap "aws/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -10,27 +10,33 @@ tap "homebrew/core"
 # Binaries
 brew "act"
 brew "asciidoctor"
+brew "python@3.9"
 brew "awscli"
 brew "broot"
+brew "glib"
 brew "cairo"
+brew "gnutls"
+brew "cask"
 brew "cocoapods"
 brew "dockutil"
-# brew "glib"
+brew "gdk-pixbuf"
 brew "gh"
 brew "ghostscript"
-# brew "git-flow-avh"
 brew "go"
+brew "gobject-introspection"
+brew "harfbuzz"
+brew "pango"
+brew "librsvg"
 brew "graphviz"
 brew "grpcurl"
-brew "harfbuzz"
+brew "node"
 brew "http-server"
 brew "hub"
 brew "jq"
 brew "mackup"
 brew "mas"
-brew "node"
 brew "pyenv"
-brew "svn"
+brew "subversion"
 brew "wget"
 brew "aws/tap/aws-sam-cli"
 
@@ -44,11 +50,14 @@ cask "font-source-sans-pro"
 cask "font-source-serif-pro"
 
 # Apps
+cask "1password"
 cask "alfred"
 # cask "android-studio"
+cask "amazon-chime"
 cask "appcleaner"
 # cask "balsamiq-wireframes"
 # cask "battle-net"
+cask "brave-browser"
 cask "caffeine"
 cask "cheatsheet"
 cask "clickup"
@@ -66,10 +75,11 @@ cask "google-cloud-sdk"
 cask "graphiql"
 cask "iconset"
 cask "jetbrains-toolbox"
+cask "kaleidoscope"
 cask "ksdiff"
 # cask "macdown"
-# cask "mailtrackerblocker"
 cask "microsoft-teams"
+cask "mimestream"
 # cask "notion"
 # cask "obsidian"
 cask "postman"
@@ -79,7 +89,7 @@ cask "rectangle"
 cask "session-manager-plugin"
 cask "sketch"
 cask "skype"
-# cask "slack"
+cask "slack"
 cask "steam"
 cask "studio-3t"
 cask "superduper"
@@ -93,24 +103,21 @@ cask "tunnelblick"
 cask "visual-studio-code"
 cask "vlc"
 cask "vmware-fusion"
-# cask "whatsapp"
 cask "zoom"
-# cask "zulu"
-cask "zulu11"
-cask "zulu15"
+cask "zulu"
+# cask "zulu15"
 
-mas "1Password 7", id: 1333542190
+mas "1Password for Safari", id: 1569813296
 mas "Cardhop", id: 1290358394
 mas "Clocker", id: 1056643111
 # mas "Craft", id: 1487937127
 mas "Day One", id: 1055511498
 mas "Fantastical", id: 975937182
-mas "Kaleidoscope", id: 587512244
+# mas "GarageBand", id: 682658836
+# mas "iMovie", id: 408981434
 # mas "Kanbanier", id: 1206854548
 mas "Keynote", id: 409183694
 # mas "Infuse", id: 1136220934
-# mas "Meeter", id: 1510445899
-# mas "Menu World Time", id: 1446377255
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Remote Desktop", id: 1295203466
@@ -122,8 +129,9 @@ mas "Pages", id: 409201541
 mas "Paprika Recipe Manager 3", id: 1303222628
 mas "Pixelmator", id: 407963104
 mas "Reeder", id: 1529448980
-mas "Slack", id: 803453959
+# mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
+mas "TestFlight", id: 899247664
 mas "Tweetbot", id: 1384080005
 # mas "Ulysses", id: 1225570693
 # mas "Usage", id: 1561788435
