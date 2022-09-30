@@ -127,7 +127,7 @@ mas "MindNode", id: 1289197285
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Paprika Recipe Manager 3", id: 1303222628
-mas "Pixelmator", id: 407963104
+mas "Pixelmator Pro", id: 1289583905
 mas "Reeder", id: 1529448980
 # mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
