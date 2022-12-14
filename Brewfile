@@ -51,6 +51,7 @@ cask "font-source-serif-pro"
 
 # Apps
 cask "1password"
+cask "1password-cli"
 cask "alfred"
 # cask "android-studio"
 cask "amazon-chime"
