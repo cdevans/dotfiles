@@ -41,3 +41,8 @@ export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 if [ -s "$HOME/.config/broot" ]; then
   source $HOME/.config/broot/launcher/bash/br
 fi
+
+# Configure 1Password CLI
+if [ -s "$HOME/.config/op" ]; then
+  source $HOME/.config/op/plugins.sh
+fi
