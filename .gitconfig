@@ -1,6 +1,6 @@
 [user]
     name = Clark Evans
-    email = cdevans@gmail.com
+	email = clark@rspndr.io
 
 [core]
     editor = code --wait
@@ -36,4 +36,4 @@
 	required = true
 
 [pull]
-	rebase = false
+	rebase = true
