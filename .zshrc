@@ -7,9 +7,18 @@ export ZSH="$ICLOUD_DRIVE/.oh-my-zsh"
 
 ZSH_THEME="ys"
 
-ZSH_CUSTOM=$DOTFILES
+ZSH_CUSTOM=$ZSH/custom
 
-plugins=(git npm docker gcloud)
+plugins=(
+  macos
+  git
+  gh
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  npm
+  docker
+  gcloud
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -46,3 +55,7 @@ fi
 if [ -s "$HOME/.config/op" ]; then
   source $HOME/.config/op/plugins.sh
 fi
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
