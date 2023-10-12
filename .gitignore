@@ -8,6 +8,8 @@ Library
 rdp
 rspndr
 secret
+zsh/plugins/*
+zsh/themes/*
 
 ##### WHITELIST #####
 
@@ -22,6 +24,7 @@ secret
 !.git-templates
 !.gitconfig
 !.gitignore_global
+!.gitkeep
 
 # zsh / oh-my-zsh
 !aliases.zsh

@@ -7,7 +7,7 @@ export ZSH="$ICLOUD_DRIVE/.oh-my-zsh"
 
 ZSH_THEME="ys"
 
-ZSH_CUSTOM=$ZSH/custom
+ZSH_CUSTOM=$DOTFILES/zsh
 
 plugins=(
   macos
