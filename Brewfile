@@ -6,6 +6,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+tab "buo/cask-upgrade"
 
 # Binaries
 brew "act"
@@ -131,10 +132,28 @@ mas "Paprika Recipe Manager 3", id: 1303222628
 mas "Pixelmator Pro", id: 1289583905
 mas "Reeder", id: 1529448980
 # mas "Slack", id: 803453959
-mas "Spark", id: 1176895641
+# mas "Spark", id: 1176895641
 mas "TestFlight", id: 899247664
-mas "Tweetbot", id: 1384080005
+# mas "Tweetbot", id: 1384080005
 # mas "Ulysses", id: 1225570693
 # mas "Usage", id: 1561788435
+mas "Usage", id: 1561788435
 mas "WhatsApp", id: 1147396723
 mas "XCode", id: 497799835
+
+
+
+1136220934  Infuse                    (7.3.10)
+975937182   Fantastical               (3.6.4)
+1571881224  NBA 2K22 Arcade Edition   (1.0.163706490)
+409201541   Pages                     (12.0)
+1446377255  Menu World Time           (1.12)
+1176895641  Spark                     (2.11.20)
+1295203466  Microsoft Remote Desktop  (10.7.6)
+803453959   Slack                     (4.26.1)
+1510445899  Meeter                    (1.9.6)
+1055511498  Day One                   (7.8)
+462054704   Microsoft Word            (16.61)
+1225570693  Ulysses                   (26)
+1289197285  MindNode                  (2022.2.3)
+409203825   Numbers                   (12.0)
