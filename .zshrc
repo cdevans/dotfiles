@@ -56,6 +56,11 @@ if [ -s "$HOME/.config/op" ]; then
   source $HOME/.config/op/plugins.sh
 fi
 
+# Configure Node 18
+export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/node@18/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@18/include"
+
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
