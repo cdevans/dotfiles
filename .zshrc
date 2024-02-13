@@ -45,7 +45,11 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 # Configure ruby/gem
-export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+#export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+if command -v rbenv 1>/dev/null 2>&1; then
+  export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+  eval "$(rbenv init -)"
+fi
 
 if [ -s "$HOME/.config/broot" ]; then
   source $HOME/.config/broot/launcher/bash/br
