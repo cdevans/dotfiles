@@ -1,6 +1,5 @@
 # Taps
 tap "apparition47/tap"
-tap "aws/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -13,6 +12,7 @@ brew "act"
 brew "asciidoctor"
 brew "python@3.9"
 brew "awscli"
+brew "aws-sam-cli"
 brew "broot"
 brew "glib"
 brew "cairo"
@@ -39,7 +39,6 @@ brew "mas"
 brew "pyenv"
 brew "subversion"
 brew "wget"
-brew "aws/tap/aws-sam-cli"
 
 # Fonts
 cask "font-lato"
