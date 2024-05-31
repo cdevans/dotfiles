@@ -60,7 +60,10 @@ if [ -s "$HOME/.config/op" ]; then
   source $HOME/.config/op/plugins.sh
 fi
 
-# Configure Node 18
+# Configure pglib
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Configure Node
 export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/node@20/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/node@20/include"
