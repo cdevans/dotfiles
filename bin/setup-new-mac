@@ -31,11 +31,11 @@ ln -s "$DOTFILES/.zshrc" "$HOME/.zshrc"
 # Symlink the Mackup config file to the home directory
 ln -s "$DOTFILES/.mackup.cfg" "$HOME/.mackup.cfg"
 
+# Restore mackup backup
+mackup restore
+
 # Clone repositories
 $DOTFILES/bin/clone-repos
-
-# Configure node
-$DOTFILES/bin/configure-node
 
 # Configure node
 $DOTFILES/bin/configure-node
@@ -45,4 +45,4 @@ $DOTFILES/bin/configure-dock
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
-source "$DOTFILES/.macos"
+# source "$DOTFILES/.macos"
