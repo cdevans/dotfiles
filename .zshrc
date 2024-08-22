@@ -28,14 +28,18 @@ if [ -s "/opt/homebrew/bin/brew" ]; then
 fi
 
 # Configure Android SDK
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
-export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
-export PATH=$ANDROID_HOME/build-tools/$(ls $ANDROID_HOME/build-tools | sort -V | tail -n 1):$PATH
-export ANDROID_EMULATOR_USE_SYSTEM_LIBS=1
+if [ -s "$HOME/Library/Android/sdk" ]; then
+  export ANDROID_HOME="$HOME/Library/Android/sdk"
+  export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+  export PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH
+  export PATH=$ANDROID_HOME/build-tools/$(ls $ANDROID_HOME/build-tools | sort -V | tail -n 1):$PATH
+  export ANDROID_EMULATOR_USE_SYSTEM_LIBS=1
+fi
 
 # Configure Gradle
-export GRADLE_USER_HOME=$HOME/.gradle
+if [ -s "$HOME/.gradle" ]; then
+  export GRADLE_USER_HOME=$HOME/.gradle
+fi
 
 # Configure pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
@@ -45,14 +49,9 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 # Configure ruby/gem
-#export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 if command -v rbenv 1>/dev/null 2>&1; then
   export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
   eval "$(rbenv init -)"
-fi
-
-if [ -s "$HOME/.config/broot" ]; then
-  source $HOME/.config/broot/launcher/bash/br
 fi
 
 # Configure 1Password CLI
@@ -60,14 +59,19 @@ if [ -s "$HOME/.config/op" ]; then
   source $HOME/.config/op/plugins.sh
 fi
 
-# Configure pglib
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+# Configure pqlib
+if [ -s "/opt/homebrew/opt/libpq/bin" ]; then
+  export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+fi
 
 # Configure Node
-export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/node@20/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/node@20/include"
-
+if [ -s "/opt/homebrew/opt/node" ]; then
+  export PATH="/opt/homebrew/opt/node/bin:$PATH"
+  export LDFLAGS="-L/opt/homebrew/opt/node/lib"
+  export CPPFLAGS="-I/opt/homebrew/opt/node/include"
+fi
 
 # Load Angular CLI autocompletion.
-source <(ng completion script)
+if command -v ng 1>/dev/null 2>&1; then
+  source <(ng completion script)
+fi
