@@ -18,15 +18,9 @@ fi
 # Personal Repos
 ################
 
-REPO="cde-misc"
-if [ ! -d "$PROJECTS/$REPO" ]; then
-  echo "Clonng" $REPO
-  git clone git@github.com:cdevans/$REPO.git $PROJECTS/$REPO
-fi
-
 REPO="cdevans.github.io"
 if [ ! -d "$PROJECTS/cdevans.github.io" ]; then
-  echo "Clonng" $REPO
+  echo "Cloning" $REPO
   git clone git@github.com:cdevans/$REPO.git $PROJECTS/$REPO
 fi
 
@@ -34,27 +28,15 @@ fi
 # RSPNDR Repos
 ################
 
+REPO="engineering-team"
+if [ ! -d "$RSPNDR/$REPO" ]; then
+  echo "Cloning" $REPO
+  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+fi
+
 REPO="product"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Clonng" $REPO
-  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
-fi
-
-REPO="postman-scripts"
-if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Clonng" $REPO
-  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
-fi
-
-REPO="rspndr-misc"
-if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Clonng" $REPO
-  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
-fi
-
-REPO="rspndr-ios-app"
-if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Clonng" $REPO
+  echo "Cloning" $REPO
   git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
@@ -63,33 +45,39 @@ if [ ! -d "$RSPNDR/$REPO" ]; then
   git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
+REPO="rspndr-ios-app"
+if [ ! -d "$RSPNDR/$REPO" ]; then
+  echo "Cloning" $REPO
+  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+fi
+
 REPO="rspndr-portal"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Clonng" $REPO
+  echo "Cloning" $REPO
   git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
 REPO="rspndr-frontend"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Clonng" $REPO
+  echo "Cloning" $REPO
   git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
 REPO="rspndr-backend"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Clonng" $REPO
+  echo "Cloning" $REPO
   git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
 REPO="rspndr-connect"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Clonng" $REPO
+  echo "Cloning" $REPO
   git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
 REPO="rspndr-doc"
 if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Clonng" $REPO
+  echo "Cloning" $REPO
   git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
