@@ -1,33 +1,18 @@
 # Taps
-tap "apparition47/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-tab "buo/cask-upgrade"
 
 # Binaries
-brew "act"
 brew "asciidoctor"
-brew "python@3.9"
 brew "awscli"
 brew "aws-sam-cli"
-brew "broot"
-brew "glib"
-brew "cairo"
-brew "gnutls"
-brew "cask"
-brew "cocoapods"
 brew "dockutil"
-brew "gdk-pixbuf"
 brew "gh"
 brew "ghostscript"
-brew "go"
-brew "gobject-introspection"
-brew "harfbuzz"
-brew "pango"
-brew "librsvg"
+# brew "go"
 brew "graphviz"
 brew "grpcurl"
 brew "node"
@@ -36,8 +21,9 @@ brew "hub"
 brew "jq"
 brew "mackup"
 brew "mas"
-brew "pyenv"
-brew "subversion"
+# brew "pyenv"
+# brew "ruby"
+# brew "rbenv"
 brew "wget"
 
 # Fonts
@@ -46,113 +32,132 @@ cask "font-open-sans"
 cask "font-roboto"
 cask "font-roboto-condensed"
 cask "font-source-code-pro"
-cask "font-source-sans-pro"
-cask "font-source-serif-pro"
 
 # Apps
-cask "1password"
+# cask "1password"              # Installed by Rippling
 cask "1password-cli"
-cask "alfred"
-# cask "android-studio"
 cask "amazon-chime"
 cask "appcleaner"
 # cask "balsamiq-wireframes"
 # cask "battle-net"
 cask "brave-browser"
-cask "caffeine"
-cask "cheatsheet"
-cask "clickup"
+# cask "caffeine"               # Use https://www.caffeine-app.net/ instead
+cask "chatgpt"
 # cask "delicious-library"
 cask "discord"
 cask "docker"
-cask "dotnet-sdk"
+# cask "dotnet-sdk"
 cask "drawio"
-# cask "flipper"
-# cask "franz"
 cask "github"
-# cask "gitkraken"
-cask "google-chrome"
-cask "google-cloud-sdk"
-cask "graphiql"
-cask "iconset"
+# cask "google-chrome"          # Installed by Rippling
+# cask "google-drive"
 cask "jetbrains-toolbox"
 cask "kaleidoscope"
 cask "ksdiff"
 # cask "macdown"
+cask "linear"
 cask "microsoft-teams"
 cask "mimestream"
+cask "ngrok"
 # cask "notion"
-# cask "obsidian"
 cask "postman"
 cask "qgis"
-# cask "qlmarkdown"
-cask "rectangle"
+cask "raycast"
 cask "session-manager-plugin"
-cask "sketch"
-cask "skype"
-cask "slack"
-cask "steam"
+# cask "sketch"
+# cask "skype"
+# cask "slack"                  # Installed by Rippling
+# cask "steam"
 cask "studio-3t"
 cask "superduper"
 # cask "swiftbar"
 cask "teamviewer"
 cask "transmission"
 cask "transmit"
-cask "tunnelblick"
+# cask "tunnelblick"
 # cask "upwork"
 # cask "visual-studio"
-cask "visual-studio-code"
+# cask "visual-studio-code"       # Installed by Rippling
 cask "vlc"
-cask "vmware-fusion"
-cask "zoom"
+# cask "vmware-fusion"
+# cask "zoom"                   # Installed by Rippling
 cask "zulu"
-# cask "zulu15"
 
 mas "1Password for Safari", id: 1569813296
 mas "Cardhop", id: 1290358394
 mas "Clocker", id: 1056643111
-# mas "Craft", id: 1487937127
 mas "Day One", id: 1055511498
 mas "Fantastical", id: 975937182
-# mas "GarageBand", id: 682658836
-# mas "iMovie", id: 408981434
-# mas "Kanbanier", id: 1206854548
+mas "Goodnotes", id: 1444383602
 mas "Keynote", id: 409183694
-# mas "Infuse", id: 1136220934
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft Word", id: 462054704
-# mas "Marked2", id: 890031187
 mas "MindNode", id: 1289197285
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Paprika Recipe Manager 3", id: 1303222628
 mas "Pixelmator Pro", id: 1289583905
 mas "Reeder", id: 1529448980
-# mas "Slack", id: 803453959
-# mas "Spark", id: 1176895641
 mas "TestFlight", id: 899247664
-# mas "Tweetbot", id: 1384080005
-# mas "Ulysses", id: 1225570693
-# mas "Usage", id: 1561788435
-mas "Usage", id: 1561788435
 mas "WhatsApp", id: 1147396723
 mas "XCode", id: 497799835
 
-
-
-1136220934  Infuse                    (7.3.10)
-975937182   Fantastical               (3.6.4)
-1571881224  NBA 2K22 Arcade Edition   (1.0.163706490)
-409201541   Pages                     (12.0)
-1446377255  Menu World Time           (1.12)
-1176895641  Spark                     (2.11.20)
-1295203466  Microsoft Remote Desktop  (10.7.6)
-803453959   Slack                     (4.26.1)
-1510445899  Meeter                    (1.9.6)
-1055511498  Day One                   (7.8)
-462054704   Microsoft Word            (16.61)
-1225570693  Ulysses                   (26)
-1289197285  MindNode                  (2022.2.3)
-409203825   Numbers                   (12.0)
+vscode "42crunch.vscode-openapi"
+vscode "akamud.vscode-theme-onedark"
+vscode "asciidoctor.asciidoctor-vscode"
+vscode "bierner.markdown-mermaid"
+vscode "bpruitt-goddard.mermaid-markdown-syntax-highlighting"
+vscode "bradlc.vscode-tailwindcss"
+vscode "christian-kohler.npm-intellisense"
+vscode "davidanson.vscode-markdownlint"
+vscode "dbaeumer.vscode-eslint"
+vscode "donjayamanne.githistory"
+vscode "dotjoshjohnson.xml"
+vscode "dskwrk.vscode-generate-getter-setter"
+vscode "editorconfig.editorconfig"
+vscode "esbenp.prettier-vscode"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "github.github-vscode-theme"
+vscode "github.vscode-github-actions"
+vscode "github.vscode-pull-request-github"
+vscode "golang.go"
+vscode "humao.rest-client"
+vscode "in4margaret.compareit"
+vscode "johnpapa.winteriscoming"
+vscode "kaleidoscope-app.vscode-ksdiff"
+vscode "kasik96.swift"
+vscode "lihui.vs-color-picker"
+vscode "mechatroner.rainbow-csv"
+vscode "minhthai.vscode-todo-parser"
+vscode "mintlify.document"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-dotnettools.csharp"
+vscode "ms-dotnettools.vscode-dotnet-runtime"
+vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
+vscode "ms-python.debugpy"
+vscode "ms-python.isort"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "nrwl.angular-console"
+vscode "pflannery.vscode-versionlens"
+vscode "pkief.material-icon-theme"
+vscode "pkief.material-product-icons"
+vscode "postman.postman-for-vscode"
+vscode "rangav.vscode-thunder-client"
+vscode "redhat.vscode-yaml"
+vscode "rubbersheep.gi"
+vscode "sleistner.vscode-fileutils"
+vscode "tomoyukim.vscode-mermaid-editor"
+vscode "vivaxy.vscode-conventional-commits"
+vscode "vscode-icons-team.vscode-icons"
+vscode "wayou.vscode-todo-highlight"
+vscode "wmaurer.vscode-jumpy"
+vscode "zhuangtongfa.material-theme"
