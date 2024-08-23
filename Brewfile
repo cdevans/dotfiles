@@ -1,9 +1,5 @@
 # Taps
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
 
 # Binaries
 brew "asciidoctor"
@@ -34,14 +30,14 @@ cask "font-roboto-condensed"
 cask "font-source-code-pro"
 
 # Apps
-# cask "1password"              # Installed by Rippling
+cask "1password", args: {adopt: true}
 cask "1password-cli"
 cask "amazon-chime"
 cask "appcleaner"
 # cask "balsamiq-wireframes"
 # cask "battle-net"
 cask "brave-browser"
-# cask "caffeine"               # Use https://www.caffeine-app.net/ instead
+# cask "caffeine"                               # Use https://www.caffeine-app.net/ instead
 cask "chatgpt"
 # cask "delicious-library"
 cask "discord"
@@ -49,38 +45,36 @@ cask "docker"
 # cask "dotnet-sdk"
 cask "drawio"
 cask "github"
-# cask "google-chrome"          # Installed by Rippling
+cask "google-chrome", args: {adopt: true}       # Installed by Rippling
 # cask "google-drive"
 cask "jetbrains-toolbox"
 cask "kaleidoscope"
-cask "ksdiff"
 # cask "macdown"
-cask "linear"
+# cask "linear"                                 # Not maintained, install manually
 cask "microsoft-teams"
 cask "mimestream"
 cask "ngrok"
 # cask "notion"
-cask "postman"
+cask "postman", args: {adopt: true}             # Installed by Rippling
 cask "qgis"
 cask "raycast"
 cask "session-manager-plugin"
 # cask "sketch"
 # cask "skype"
-# cask "slack"                  # Installed by Rippling
+cask "slack", args: {adopt: true}               # Installed by Rippling
 # cask "steam"
 cask "studio-3t"
 cask "superduper"
-# cask "swiftbar"
 cask "teamviewer"
 cask "transmission"
 cask "transmit"
 # cask "tunnelblick"
+cask "typora"
 # cask "upwork"
-# cask "visual-studio"
-# cask "visual-studio-code"       # Installed by Rippling
+cask "visual-studio-code", args: {adopt: true}  # Installed by Rippling
 cask "vlc"
 # cask "vmware-fusion"
-# cask "zoom"                   # Installed by Rippling
+cask "zoom", args: {adopt: true}                # Installed by Rippling
 cask "zulu"
 
 mas "1Password for Safari", id: 1569813296
@@ -128,7 +122,6 @@ vscode "humao.rest-client"
 vscode "in4margaret.compareit"
 vscode "johnpapa.winteriscoming"
 vscode "kaleidoscope-app.vscode-ksdiff"
-vscode "kasik96.swift"
 vscode "lihui.vs-color-picker"
 vscode "mechatroner.rainbow-csv"
 vscode "minhthai.vscode-todo-parser"
