@@ -15,10 +15,6 @@ alias dotfiles="cd '$DOTFILES'"
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
-# Show/hide hidden files in Finder
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
