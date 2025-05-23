@@ -41,8 +41,17 @@ $DOTFILES/bin/clone-repos
 $DOTFILES/bin/configure-node
 
 # Configure Dock
-$DOTFILES/bin/configure-dock
+# $DOTFILES/bin/configure-dock
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
 # source "$DOTFILES/.macos"
+
+# Symlink the files Mackup would if working properly
+ln -s "$DOTFILES/.aws" "$HOME/.aws"
+ln -s "$DOTFILES/.boto" "$HOME/.boto"
+ln -s "$DOTFILES/.gitconfig" "$HOME/.gitconfig"
+ln -s "$DOTFILES/.jshintrc" "$HOME/.jshintrc"
+ln -s "$DOTFILES/.mackup" "$HOME/.mackup"
+ln -s "$DOTFILES/.npmrc" "$HOME/.nmprc"
+ln -s "$DOTFILES/.yarnrc" "$HOME/.yarnrc"
