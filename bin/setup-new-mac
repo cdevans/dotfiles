@@ -32,7 +32,7 @@ ln -s "$DOTFILES/.zshrc" "$HOME/.zshrc"
 ln -s "$DOTFILES/.mackup.cfg" "$HOME/.mackup.cfg"
 
 # Restore mackup backup
-mackup restore
+# mackup restore
 
 # Clone repositories
 $DOTFILES/bin/clone-repos
