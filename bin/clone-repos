@@ -81,4 +81,10 @@ if [ ! -d "$RSPNDR/$REPO" ]; then
   git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
 fi
 
+REPO="release-notes"
+if [ ! -d "$RSPNDR/$REPO" ]; then
+  echo "Cloning" $REPO
+  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+fi
+
 echo "Repositories set up..."
