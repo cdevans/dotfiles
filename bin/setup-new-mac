@@ -21,7 +21,6 @@ fi
 brew update
 
 # Install all our dependencies with bundle (see Brewfile)
-brew tap homebrew/bundle
 brew bundle --file "$DOTFILES/Brewfile"
 
 # Remove .zshrc from $HOME (if it exists) and symlink the .zshrc file from the dotfiles directory
