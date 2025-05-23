@@ -30,7 +30,7 @@ cask "font-open-sans"
 cask "font-roboto"
 # cask "font-roboto-condensed"
 cask "font-source-code-pro"
-cask "font-source-serif-pro"
+cask "font-source-serif-4"
 
 # Apps
 cask "1password", args: {adopt: true}
