@@ -25,6 +25,8 @@ function rspndr-cluster-task-debug() {
     echo "❌ No running task ARNs found for service $service in cluster $cluster"
     return 1
   fi
+
+  echo "✅ Resolved task ARN: $task_arn"
   
   local container_debug_port=$(aws ecs describe-tasks \
     --cluster "$cluster" \
