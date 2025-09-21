@@ -26,8 +26,5 @@ alias unstage="git restore --staged ."
 alias nfresh="rm -rf node_modules/ && npm install"
 alias watch="npm run watch"
 
-# RSPNDR
-alias rspndr-uuid="uuidgen | tr '[:upper:]' '[:lower:]' | tr -d '\n' | pbcopy"
-alias rspndr-inst="'$DOTFILES/rspndr/aws-list-instances'"
-alias rspndr-ssh="'$DOTFILES/rspndr/aws-ssh'"
-alias rspndr-org="'$DOTFILES/rspndr/org-cache'"
+# Utility
+alias uuid="uuidgen | tr '[:upper:]' '[:lower:]' | tr -d '\n' | pbcopy"
