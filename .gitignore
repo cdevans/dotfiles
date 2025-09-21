@@ -33,6 +33,7 @@ zsh/themes/*
 
 # dotfiles
 !README.md
-!Brewfile
 !.macos
-
+!Brewfile
+!Brewfile-work
+!Brewfile-vscode
