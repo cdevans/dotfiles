@@ -2,7 +2,5 @@
 
 echo "Installing global NodeJS packages"
 
-npm install -g @angular/cli@latest @nrwl/cli@latest
 npm install -g commitizen@latest cz-conventional-changelog@latest
 npm install -g typescript@latest eslint@latest @typescript-eslint/parser@latest @typescript-eslint/eslint-plugin@latest standard@latest
-

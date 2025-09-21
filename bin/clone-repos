@@ -8,83 +8,36 @@ if [ ! -d "$PROJECTS" ]; then
   mkdir -p $PROJECTS
 fi
 
-RSPNDR=$PROJECTS/RSPNDR
-if [ ! -d "$RSPNDR" ]; then
-  echo "Creating" $RSPNDR
-  mkdir -p $RSPNDR
-fi
+#######################
+# Personal Repositories
+#######################
 
-################
-# Personal Repos
-################
+PERSONAL=$PROJECTS/PERSONAL
+if [ ! -d "$PERSONAL" ]; then
+  echo "Creating" $PERSONAL
+  mkdir -p $PERSONAL
+fi
 
 REPO="cdevans.github.io"
-if [ ! -d "$PROJECTS/cdevans.github.io" ]; then
+if [ ! -d "$PERSONAL/cdevans.github.io" ]; then
   echo "Cloning" $REPO
-  git clone git@github.com:cdevans/$REPO.git $PROJECTS/$REPO
+  git clone git@github.com:cdevans/$REPO.git $PERSONAL/$REPO
 fi
 
-################
-# RSPNDR Repos
-################
-
-REPO="engineering-team"
-if [ ! -d "$RSPNDR/$REPO" ]; then
+REPO="cde-misc"
+if [ ! -d "$PERSONAL/cde-misc" ]; then
   echo "Cloning" $REPO
-  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+  git clone git@github.com:cdevans/$REPO.git $PERSONAL/$REPO
 fi
 
-REPO="product"
-if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Cloning" $REPO
-  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
-fi
+###################
+# Work Repositories
+###################
 
-REPO="rspndr-android-app"
-if [ ! -d "$RSPNDR/$REPO" ]; then
-  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
-fi
-
-REPO="rspndr-ios-app"
-if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Cloning" $REPO
-  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
-fi
-
-REPO="rspndr-portal"
-if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Cloning" $REPO
-  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
-fi
-
-REPO="rspndr-frontend"
-if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Cloning" $REPO
-  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
-fi
-
-REPO="rspndr-backend"
-if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Cloning" $REPO
-  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
-fi
-
-REPO="rspndr-connect"
-if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Cloning" $REPO
-  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
-fi
-
-REPO="rspndr-doc"
-if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Cloning" $REPO
-  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
-fi
-
-REPO="release-notes"
-if [ ! -d "$RSPNDR/$REPO" ]; then
-  echo "Cloning" $REPO
-  git clone git@github.com:rspndr/$REPO.git $RSPNDR/$REPO
+WORK=$PROJECTS/WORK
+if [ ! -d "$WORK" ]; then
+  echo "Creating" $WORK
+  mkdir -p $WORK
 fi
 
 echo "Repositories set up..."
