@@ -1,6 +1,6 @@
 [user]
     name = Clark Evans
-	email = clark@rspndr.io
+    email = cdevans@gmail.com
 
 [core]
     editor = code --wait
@@ -11,38 +11,38 @@
     amend = commit --amend
 
 [diff]
-	tool = Kaleidoscope
+    tool = Kaleidoscope
 
 [difftool]
-	prompt = false
-	trustExitCode = true
+    prompt = false
+    trustExitCode = true
 
 [difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 
 [merge]
-	tool = Kaleidoscope
+    tool = Kaleidoscope
 
 [mergetool]
-	prompt = false
+    prompt = false
 
 [mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
+    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+    trustExitCode = true
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
 
 [pull]
-	rebase = true
+    rebase = true
 
 [credential "https://github.com"]
-	helper = 
-	helper = !/opt/homebrew/bin/gh auth git-credential
+    helper = 
+    helper = !/opt/homebrew/bin/gh auth git-credential
 
 [credential "https://gist.github.com"]
-	helper = 
-	helper = !/opt/homebrew/bin/gh auth git-credential
+    helper = 
+    helper = !/opt/homebrew/bin/gh auth git-credential

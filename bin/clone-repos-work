@@ -1,0 +1,43 @@
+#!/bin/zsh
+
+echo "Setting up repositories..."
+
+PROJECTS=$HOME/Projects
+if [ ! -d "$PROJECTS" ]; then
+  echo "Creating" $PROJECTS
+  mkdir -p $PROJECTS
+fi
+
+#######################
+# Personal Repositories
+#######################
+
+PERSONAL=$PROJECTS/PERSONAL
+if [ ! -d "$PERSONAL" ]; then
+  echo "Creating" $PERSONAL
+  mkdir -p $PERSONAL
+fi
+
+REPO="cdevans.github.io"
+if [ ! -d "$PERSONAL/cdevans.github.io" ]; then
+  echo "Cloning" $REPO
+  git clone git@github.com:cdevans/$REPO.git $PERSONAL/$REPO
+fi
+
+REPO="cde-misc"
+if [ ! -d "$PERSONAL/cde-misc" ]; then
+  echo "Cloning" $REPO
+  git clone git@github.com:cdevans/$REPO.git $PERSONAL/$REPO
+fi
+
+###################
+# Work Repositories
+###################
+
+WORK=$PROJECTS/WORK
+if [ ! -d "$WORK" ]; then
+  echo "Creating" $WORK
+  mkdir -p $WORK
+fi
+
+echo "Repositories set up..."

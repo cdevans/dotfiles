@@ -27,30 +27,22 @@ brew bundle --file "$DOTFILES/Brewfile"
 rm -rf $HOME/.zshrc
 ln -s "$DOTFILES/.zshrc" "$HOME/.zshrc"
 
-# Symlink the Mackup config file to the home directory
-ln -s "$DOTFILES/.mackup.cfg" "$HOME/.mackup.cfg"
+# Symlink the Mackup config to the home directory
+# ln -s "$DOTFILES/.mackup.cfg" "$HOME/.mackup.cfg"
+# ln -s "$DOTFILES/.mackup" "$HOME/.mackup"
 
 # Restore mackup backup
 # mackup restore
 
 # Clone repositories
-$DOTFILES/bin/clone-repos
-
-# Configure node
-$DOTFILES/bin/configure-node
+$DOTFILES/bin/clone-repos-personal
 
 # Configure Dock
-# $DOTFILES/bin/configure-dock
+$DOTFILES/bin/configure-dock
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
 # source "$DOTFILES/.macos"
 
 # Symlink the files Mackup would if working properly
-ln -s "$DOTFILES/.aws" "$HOME/.aws"
-ln -s "$DOTFILES/.boto" "$HOME/.boto"
 ln -s "$DOTFILES/.gitconfig" "$HOME/.gitconfig"
-ln -s "$DOTFILES/.jshintrc" "$HOME/.jshintrc"
-ln -s "$DOTFILES/.mackup" "$HOME/.mackup"
-ln -s "$DOTFILES/.npmrc" "$HOME/.nmprc"
-ln -s "$DOTFILES/.yarnrc" "$HOME/.yarnrc"

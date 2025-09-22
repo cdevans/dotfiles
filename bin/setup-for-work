@@ -1,0 +1,28 @@
+#!/bin/zsh
+
+if [ ! -d "$DOTFILES" ]; then
+  DOTFILES="$HOME/Library/Mobile Documents/com~apple~CloudDocs/dotfiles"
+fi
+
+echo "Setting up your Mac..."
+
+# Update Homebrew recipes
+brew update
+
+# Install all our dependencies with bundle (see Brewfile)
+brew bundle --file "$DOTFILES/Brewfile-work"
+
+# Clone repositories
+$DOTFILES/bin/clone-repos-work
+
+# Configure node
+$DOTFILES/bin/configure-node
+
+# Configure Dock
+# $DOTFILES/bin/configure-dock
+
+# Symlink the files Mackup would if working properly
+ln -s "$DOTFILES/.boto" "$HOME/.boto"
+ln -s "$DOTFILES/.gitconfig" "$HOME/.gitconfig"
+ln -s "$DOTFILES/.npmrc" "$HOME/.nmprc"
+ln -s "$DOTFILES/.yarnrc" "$HOME/.yarnrc"
