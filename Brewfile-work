@@ -45,5 +45,7 @@ cask "zulu"
 ##################
 # App Store - Work
 ##################
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "MindNode", id: 1289197285
 mas "TestFlight", id: 899247664
 mas "XCode", id: 497799835

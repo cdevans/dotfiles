@@ -1,7 +1,3 @@
-######
-# Taps
-######
-tap "homebrew/bundle"
 
 #######
 # Fonts
@@ -43,7 +39,6 @@ cask "transmit", args: {adopt: true}
 cask "typora", args: {adopt: true}
 cask "visual-studio-code", args: {adopt: true}
 cask "vlc", args: {adopt: true}
-cask "vmware-fusion", args: {adopt: true}
 cask "zoom", args: {adopt: true}
 
 #####################
@@ -58,14 +53,10 @@ mas "Goodnotes", id: 1444383602
 mas "Keynote", id: 409183694
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816
-mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft Word", id: 462054704
-mas "MindNode", id: 1289197285
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Paprika Recipe Manager 3", id: 1303222628
 mas "Pixelmator Pro", id: 1289583905
 mas "Reeder", id: 1529448980
-# mas "TestFlight", id: 899247664
-mas "WhatsApp", id: 1147396723
-mas "XCode", id: 497799835
+mas "WhatsApp", id: 310633997
