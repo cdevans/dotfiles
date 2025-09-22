@@ -12,6 +12,7 @@ cask "font-source-code-pro"
 # Binaries - General
 ####################
 brew "dockutil"
+brew "gh"
 # brew "mackup"
 brew "mas"
 

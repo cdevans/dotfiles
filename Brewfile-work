@@ -4,7 +4,6 @@
 brew "asciidoctor"
 brew "awscli"
 brew "aws-sam-cli"
-brew "gh"
 brew "ghostscript"
 brew "go"
 brew "graphviz"

@@ -23,6 +23,5 @@ $DOTFILES/bin/configure-node
 
 # Symlink the files Mackup would if working properly
 ln -s "$DOTFILES/.boto" "$HOME/.boto"
-ln -s "$DOTFILES/.gitconfig" "$HOME/.gitconfig"
 ln -s "$DOTFILES/.npmrc" "$HOME/.nmprc"
 ln -s "$DOTFILES/.yarnrc" "$HOME/.yarnrc"

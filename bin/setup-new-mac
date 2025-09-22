@@ -46,3 +46,4 @@ $DOTFILES/bin/configure-dock
 
 # Symlink the files Mackup would if working properly
 ln -s "$DOTFILES/.gitconfig" "$HOME/.gitconfig"
+ln -s "$DOTFILES/.gitignore_global" "$HOME/.gitignore_global"
