@@ -21,6 +21,7 @@ brew "yarn"
 #############
 # Apps - Work
 #############
+cask "android-studio", args: {adopt: true}
 cask "amazon-chime", args: {adopt: true}
 cask "balsamiq-wireframes", args: {adopt: true}
 cask "docker-desktop", args: {adopt: true}
@@ -36,9 +37,9 @@ cask "postman", args: {adopt: true}
 cask "qgis", args: {adopt: true}
 cask "session-manager-plugin", args: {adopt: true}
 cask "sketch", args: {adopt: true}
-cask "studio-3t"
+# cask "studio-3t"
 cask "tunnelblick"
-cask "upwork"
+# cask "upwork"
 cask "zulu"
 
 ##################
