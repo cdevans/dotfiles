@@ -22,6 +22,5 @@ $DOTFILES/bin/configure-node
 # $DOTFILES/bin/configure-dock
 
 # Symlink the files Mackup would if working properly
-ln -s "$DOTFILES/.boto" "$HOME/.boto"
 ln -s "$DOTFILES/.npmrc" "$HOME/.nmprc"
 ln -s "$DOTFILES/.yarnrc" "$HOME/.yarnrc"
