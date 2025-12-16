@@ -1,0 +1,51 @@
+#!/bin/zsh
+
+echo "Setting up Fitsentive repositories..."
+
+PROJECTS=$HOME/Projects
+if [ ! -d "$PROJECTS" ]; then
+  echo "Creating" $PROJECTS
+  mkdir -p $PROJECTS
+fi
+
+#########################
+# Fitsentive Repositories
+#########################
+
+BASEDIR=$PROJECTS/FITSENTIVE
+if [ ! -d "$BASEDIR" ]; then
+  echo "Creating" $BASEDIR
+  mkdir -p $BASEDIR
+fi
+
+REPO="git@gitlab.com:phoosaram/fitsentive_admin.git"
+REPODIR="fitsentive_admin"
+if [ ! -d "$BASEDIR/$REPODIR" ]; then
+  git clone $REPO $BASEDIR/$REPODIR
+fi
+
+REPO="git@gitlab.com:phoosaram/fitsentive.git"
+REPODIR="fitsentive_android"
+if [ ! -d "$BASEDIR/$REPODIR" ]; then
+  git clone $REPO $BASEDIR/$REPODIR
+fi
+
+REPO="git@gitlab.com:phoosaram/fitsentive_apis.git"
+REPODIR="fitsentive_apis"
+if [ ! -d "$BASEDIR/$REPODIR" ]; then
+  git clone $REPO $BASEDIR/$REPODIR
+fi
+
+REPO="git@gitlab.com:phoosaram/fitsentive_creator.git"
+REPODIR="fitsentive_creator"
+if [ ! -d "$BASEDIR/$REPODIR" ]; then
+  git clone $REPO $BASEDIR/$REPODIR
+fi
+
+REPO="git@gitlab.com:phoosaram/fitsentive_ios.git"
+REPODIR="fitsentive_ios"
+if [ ! -d "$BASEDIR/$REPODIR" ]; then
+  git clone $REPO $BASEDIR/$REPODIR
+fi
+
+echo "Fitsentive repositories set up..."

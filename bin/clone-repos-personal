@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-echo "Setting up repositories..."
+echo "Setting up personal repositories..."
 
 PROJECTS=$HOME/Projects
 if [ ! -d "$PROJECTS" ]; then
@@ -12,32 +12,22 @@ fi
 # Personal Repositories
 #######################
 
-PERSONAL=$PROJECTS/PERSONAL
-if [ ! -d "$PERSONAL" ]; then
-  echo "Creating" $PERSONAL
-  mkdir -p $PERSONAL
+BASEDIR=$PROJECTS/PERSONAL
+if [ ! -d "$BASEDIR" ]; then
+  echo "Creating" $BASEDIR
+  mkdir -p $BASEDIR
 fi
 
-REPO="cdevans.github.io"
-if [ ! -d "$PERSONAL/cdevans.github.io" ]; then
-  echo "Cloning" $REPO
-  git clone git@github.com:cdevans/$REPO.git $PERSONAL/$REPO
+REPO="git@github.com:cdevans/cdevans.github.io"
+REPODIR="cdevans.github.io"
+if [ ! -d "$BASEDIR/$REPODIR" ]; then
+  git clone $REPO $BASEDIR/$REPODIR
 fi
 
-REPO="cde-misc"
-if [ ! -d "$PERSONAL/cde-misc" ]; then
-  echo "Cloning" $REPO
-  git clone git@github.com:cdevans/$REPO.git $PERSONAL/$REPO
+REPO="git@github.com:cdevans/cde-misc"
+REPODIR="cde-misc"
+if [ ! -d "$BASEDIR/$REPODIR" ]; then
+  git clone $REPO $BASEDIR/$REPODIR
 fi
 
-###################
-# Work Repositories
-###################
-
-WORK=$PROJECTS/WORK
-if [ ! -d "$WORK" ]; then
-  echo "Creating" $WORK
-  mkdir -p $WORK
-fi
-
-echo "Repositories set up..."
+echo "Personal repositories set up..."
