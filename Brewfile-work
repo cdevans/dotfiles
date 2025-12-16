@@ -30,7 +30,7 @@ cask "github", args: {adopt: true}
 cask "google-cloud-sdk", args: {adopt: true}
 cask "jetbrains-toolbox", args: {adopt: true}
 cask "macdown", args: {adopt: true}
-cask "microsoft-teams", args: {adopt: true}
+# cask "microsoft-teams", args: {adopt: true}
 cask "ngrok", args: {adopt: true}
 cask "notion", args: {adopt: true}
 cask "postman", args: {adopt: true}
@@ -45,7 +45,4 @@ cask "zulu"
 ##################
 # App Store - Work
 ##################
-mas "Microsoft Remote Desktop", id: 1295203466
-mas "MindNode", id: 1289197285
 mas "TestFlight", id: 899247664
-mas "XCode", id: 497799835

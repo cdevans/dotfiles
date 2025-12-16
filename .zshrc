@@ -49,6 +49,11 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 # Configure ruby/gem
+export GEM_HOME="$HOME/.gem"
+export PATH="$GEM_HOME/bin:$PATH"
+if [ -s "/opt/homebrew/opt/ruby/bin" ]; then
+  export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+fi
 if command -v rbenv 1>/dev/null 2>&1; then
   export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
   eval "$(rbenv init -)"
